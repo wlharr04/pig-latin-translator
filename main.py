@@ -14,5 +14,3 @@ def main():
         output_string = text_formatter.make_output_string(translated_words)
         print("\nIn Pig Latin:", output_string, sep = "\n", end = "\n\n")
         file_handler.save_file(output_string)
-        
-main()
