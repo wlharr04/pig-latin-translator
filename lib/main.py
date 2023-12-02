@@ -1,7 +1,7 @@
-import input_analysis
-import translator
-import text_formatter
-import file_handler
+from lib import input_analysis
+from lib import translator
+from lib import text_formatter
+from lib import file_handler
 
 def main():
     while True:
