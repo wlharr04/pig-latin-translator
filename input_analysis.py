@@ -20,15 +20,12 @@ def analyze(input):
         if word[0].isupper():
             word_map["uppercase"] = 1
         
-        i = 0
-        for char in word:
+        for i, char in enumerate(word):
             if char in vowels:
                 word_map["first_vowel_index"] = i
                 break
-            i += 1
-        
-        i = 0
-        for char in word:
+
+        for i, char in enumerate(word):
             char_info = {
                 "index": i,
                 "character": char,
@@ -39,7 +36,6 @@ def analyze(input):
                 char_info["punctuation"] = 1
 
             character_map.append(char_info)
-            i += 1
         
         ## Then we add the mapping of all the characters to the entry for the word, then add the word to the text.
         word_map["character_map"] = character_map
