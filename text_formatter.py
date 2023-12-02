@@ -5,7 +5,7 @@ def make_output_string(translated_words):
     output_string = ''
 
     for word in translated_words:
-        input_string += word + " "
+        input_string += f'{word} '
 
     lines = textwrap.wrap(input_string)
 
